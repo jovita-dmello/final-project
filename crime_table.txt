@@ -1,0 +1,75 @@
+
+if(isset($_POST["submit"])) { 
+$state=$_POST["state"];
+
+
+
+
+CREATE TABLE admin_db(
+	admin_id varchar(20) NOT NULL,
+	password varchar(30) NOT NULL,
+	fullname varchar(50) NOT NULL,
+	gender varchar(7) DEFAULT NULL,
+	email varchar(50) DEFAULT NULL,
+	phone varchar(12) DEFAULT NULL, 
+	home_address varchar(100) DEFAULT NULL,
+	work_address varchar(100) DEFAULT NULL,
+	aadharnum varchar(50) NOT NULL,
+	police_id varchar(50) NOT NULL,
+	account_status varchar(20) NOT NULL,
+	PRIMARY KEY (admin_id)
+)
+
+INSERT INTO admin_db(admin_id,password,fullname,gender,email,phone,home_address,work_address,aadharnum,police_id,account_status)
+VALUES('milindjoo','123456','Milind Bijukumar','Male','milindj@gmail.com','9034242737','THE Love Dale, Mangad, Kannur, Kerala, 670563','Police, Mangad, Kannur, Kerala, 670563','1234-9876-4561','2017/20/05','Unverified')
+
+CREATE TABLE user_db(
+	user_id varchar(20) NOT NULL,
+	password varchar(30) NOT NULL,
+	fullname varchar(50) NOT NULL,
+	gender varchar(7) DEFAULT NULL,
+	email varchar(50) DEFAULT NULL,
+	phone varchar(12) DEFAULT NULL, 
+	address varchar(100) DEFAULT NULL,
+	aadharnum varchar(50) NOT NULL,
+	PRIMARY KEY (user_id)
+)
+
+
+
+
+CREATE TABLE complaint_db(
+    complaint_id INT(10)NOT NULL AUTO_INCREMENT,
+    user_id varchar(30) DEFAULT NULL,
+    full_name varchar(50) DEFAULT NULL,
+    gender varchar(7) DEFAULT NULL,
+    email varchar(50) DEFAULT NULL,
+    phone varchar(12) DEFAULT NULL, 
+    aadharnum varchar(50) DEFAULT NULL,
+    address varchar(100) DEFAULT NULL,
+    crime_category varchar(15) DEFAULT NULL,
+    crime_day int(11) NOT NULL,
+    crime_month int(5) NOT NULL,
+    crime_year int(10) NOT NULL,
+    crime_district varchar(20) NOT NULL,
+    crime_state varchar(20) NOT NULL,
+    complaint_detail varchar(1000) NOT NULL,
+    status varchar(20) NOT NULL,
+    PRIMARY KEY (complaint_id)
+)
+
+
+INSERT INTO complaintdb(user_id, full_name, gender,  email, phone, aadharnum, address,crime_category, crime_day, crime_month, crime_year, crime_district, crime_state, complaint_detail, status ) VALUES
+('gauthami','Gauthami UG','Female','gauthami@gmail.com','9844242535','4321-9876-1234','house2, belman, Uddupi, Karnataka, 680863','Theft',25,01,2010,'Udupi','Karnataka','one strange nigth there were soo many noise from out side. when we checked out we notice a man walking from a house with a knife covered in blood. When we went inside there were 2 bodies lying down on floor covered in blood.','Approved');
+
+
+
+INSERT INTO complaintdb(user_id,full_name, gender,  email, phone, aadharnum, address,crime_category, crime_day, crime_month, crime_year, crime_district, crime_state, complaint_detail, status ) VALUES
+('jovi','Jovita','Female','jovita@gmail.com','9834242535','4561-9876-1234','house2, belman, Uddupi, Karnataka, 680863','Theft',05,10,2012,'Udupi','Karnataka','one strange nigth there were soo many noise from out side. when we checked out we notice a man walking from a house with a knife covered in blood. When we went inside there were 2 bodies lying down on floor covered in blood.','Pending');
+
+
+INSERT INTO complaintdb(user_id,full_name, gender,  email, phone, aadharnum, address,crime_category, crime_day, crime_month, crime_year, crime_district, crime_state, complaint_detail, status ) VALUES
+('mili20''Milind Bijukumar','Male','milind@gmail.com','9034242737','1234-9876-4561','THE love Dale, Mangad, Kannur, Kerala, 670563','Murder',20,12,2005,'Calicut','Kerala','one strange nigth there were soo many noise from out side. when we checked out we notice a man walking from a house with a knife covered in blood. When we went inside there were 2 bodies lying down on floor covered in blood.','Pending');
+
+INSERT INTO complaintdb(user_id,full_name, gender,  email, phone, aadharnum, address,crime_category, crime_day, crime_month, crime_year, crime_district, crime_state, complaint_detail, status ) VALUES
+('mili20','Milind Bijukumar','Male','milind@gmail.com','9034242737','1234-9876-4561','THE love Dale, Mangad, Kannur, Kerala, 670563','Theft',20,12,2005,'Calicut','Kerala','one strange nigth there were soo many noise from out side. when we checked out we notice a man walking from a house with a knife covered in blood. When we went inside there were 2 bodies lying down on floor covered in blood.','Investigating');

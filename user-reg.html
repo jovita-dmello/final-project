@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>User Registration Form</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.1-web\css\all.css">
+    <link rel="stylesheet" type="text/css" href="css/user-reg.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>    
+<body>
+
+    <section class="user-form">
+        <div class="container py-5 px-5">
+            <h1>User Registration Form</h1>
+            <form action="" method="" class="my-5">
+                <h3>Personal Details</h3><hr>
+                <div class="row g-3 my-4">
+                    <div class="col">
+                        <label for="" class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="ex : Milind" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="ex : Bijukumar" aria-label="Last name">
+                    </div>
+                </div>
+                <label for="" class="form-label">Gender : </label>
+                <div class="form-check form-check-inline mx-3">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline mx-3">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="male">Female</label>
+                </div> 
+                <div class="form-check form-check-inline mx-3">
+                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div> 
+                <div class="row py-2">
+                    <div class="col-lg-6">
+                        <label for="" class="form-label">Email id :</label>
+                        <input type="email" class="form-control" placeholder="ex : milindjoo@gmail.com" aria-label="Email-id">
+                    </div>     
+                </div> 
+                <div class="row py-2">
+                    <div class="col-lg-6">
+                        <label for="" class="form-label">Mobile:</label>
+                        <input type="tel" class="form-control" placeholder="ex : 9037272424" aria-label="Email-id">
+                    </div>     
+                </div>
+                <div class="row py-2">
+					<div class="form-group col-lg-6">
+						<label for="house" class="py-1">House No:/Name</label>
+	         		 	<input id="house" type="text" class="form-control" name="house" placeholder="House Name/No:">
+					</div>	
+					<div class="form-group col-lg-6">
+						<label for="area" class="py-1">Street/Area</label>
+	         		 	<input id="area" type="text" class="form-control" name="street" placeholder="Street/Area">
+					</div>
+				</div>   
+                <div class="row py-2">
+					<div class="form-group col-lg-6">
+						<label for="city" class="py-1">City</label>
+	         		 	<input id="city" type="text" class="form-control" name="city" placeholder="City">
+					</div>	
+					<div class="form-group col-lg-6">
+						<label for="area" class="py-1">PinCode</label>
+	         		 	<input id="pin" type="text" class="form-control" name="pincode" placeholder="PinCode">
+					</div>
+				</div>
+                <div class="row py-2">
+					<div class="form-group col-lg-6">
+						<label for="city" class="py-1">District</label>
+	         		 	<input id="city" type="text" class="form-control" name="district" placeholder="District">
+					</div>	
+					<div class="form-group col-lg-6">
+						<label for="area" class="py-1">State</label>
+                        <select class="form-select py-1" aria-label="state">
+                            <option selected></option>
+                            <option disabled>States :</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+
+                            <option disabled>Union Territorries :</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+
+                        </select>
+					</div>
+				</div>
+                <div class="row py-2">
+                    <div class="col-lg-6">
+                        <label for="" class="form-label py-1">Aadhar Card No:</label>
+                        <input type="text" class="form-control" placeholder="ex : 1021-XXX-XXX-XX36" aria-label="">
+                    </div> 
+                    <div class="col-lg-6">
+                        <label for="" class="form-label py-1">Upload Aadhar Card</label>    <br>
+                        <input type="file" class="form-control" aria-label="scanned-aadhar" required>
+                    </div> 
+                </div><br><br>
+                
+                
+                <h3>Account Details</h3><hr>
+                <div class="row py-2">
+                    <label for="username" class="py-1">Username :</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="user-addon">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row py-2">
+					<div class="form-group col-lg-6">
+						<label for="house" class="py-1">Password</label>
+	         		 	<input id="" type="password" class="form-control" name="password" placeholder="Enter Password">
+					</div>	
+					<div class="form-group col-lg-6">
+						<label for="area" class="py-1">Confirm your Password</label>
+                        <input id="" type="password" class="form-control" name="password" placeholder="Confirm your Password">
+					</div>
+				</div>
+
+                <div class="col-12 mt-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-2 mx-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="bootstrap-4/js/jquery-3.5.1.slim.min.js"></script>  
+    <script src="bootstrap-4/js/popper.min.js"></script> 
+    <script type="text/javascript" src="bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+</html>
