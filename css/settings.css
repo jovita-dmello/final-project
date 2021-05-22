@@ -1,0 +1,54 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Styling for Navigation Bar */
+.nav-link{
+	color: black;
+	font-weight: 600;
+}
+.navbar-brand{
+	color: black;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+/*Styling the input Box*/
+.form-control:focus{
+	border-color: rgb(25,182,207);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 3px 3px 8px rgba(249, 168, 38, 0.7);
+	outline: none;
+}
+.profile .form-group{
+	font-weight: 600;
+}
+
+.profile .change{
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+.profile .btn-info{
+	color: white;
+	background: rgb(25, 182, 207);
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 1px;
+	float: right;
+}
+.profile .btn-info:hover{
+	letter-spacing: 1.5px;
+	transition: .5s;
+}
+
+
+/* Styling for footer*/
+footer a:hover{
+    width: 45px;
+    transition: 3s;
+}

@@ -1,0 +1,253 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Styling for Navigation Bar */
+.nav-link{
+	color: black;
+	font-weight: 600;
+}
+.navbar-brand{
+	color: black;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+/* Styling for Video Slider */
+.carousel-item{
+	max-height: 645px;
+}
+
+
+/* Styling for Map Section*/
+
+.map-section{
+	margin: 75px auto;
+}
+.map-section .header1{
+	text-align: center;
+	font-weight: 700;
+	color: rgb(0,0,0);
+	text-transform: uppercase;
+}
+.map-section .header1::after{
+	content:'';
+	background-color: #19b6cf; 
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 1px;
+}
+.info-box{
+    border-radius: 25px;
+    text-align: center;
+    height: 100px;
+}
+.info-box h4{
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+
+/* Styling for Our Service*/
+.our-service{
+	margin: 75px auto;
+}
+.our-service h1{
+	text-align: center;
+	font-weight: 700;
+	color: rgb(0,0,0);
+	text-transform: uppercase;
+}
+
+.our-service h1::after{
+	content:'';
+	background-color: #19b6cf; 
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 1px;
+}
+
+.our-service .row{
+	margin-top: 30px;
+}
+
+.our-service .col-md-4{
+	margin: 70px auto;
+}
+
+.our-service .service{
+	padding: 70px 10px 10px;
+	background-color: #efefef;
+}
+
+.our-service .service img{
+	top: -60px;
+	position: absolute;
+	left: calc(50% - 60px);
+
+}
+.our-service .ser{
+	width: 160px;
+	height: 160px;
+
+}
+
+.our-service .service:hover h3{
+    letter-spacing: 5px;
+    transition: 00.5s;
+}
+.our-service .service:hover img{
+	top: -60px;
+	position: absolute;
+	left: calc(50% 120px);
+}
+.our-service .service:hover .ser{
+	width: 170px;
+	height: 170px;
+    transition: 0.5s;
+
+}
+
+.our-service h3{
+	font-size: 30px;
+	margin-top: 15px;
+    letter-spacing: 3px;
+	color: #19b6cf;
+}
+
+.our-service blockquote{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.our-service blockquote::before{
+	content: "\201C";
+	font-size: 50px;
+	position: relative;
+	color: #19b6cf;
+	line-height: 20px;
+	bottom: -15px;
+	right: 5px;
+	margin-right: 5px;  
+}
+
+.our-service blockquote::after{
+	content: "\201C";
+	font-size: 50px;
+	position: relative;
+	color: #19b6cf;
+	line-height: 20px;
+	bottom: -15px;
+	margin-left: 5px; 
+}
+
+/* Styling for Team Section*/
+.team-area{
+    padding: 60px 0;
+}
+.team-area h1{
+	text-align: center;
+	font-weight: 700;
+	color: rgb(0,0,0);
+	text-transform: uppercase;
+}
+
+.team-area h1::after{
+	content:'';
+	background-color: #19b6cf; 
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 1px;
+}
+.team-area .row{
+    margin-top: 100px;
+}
+
+.team-area img{
+    width: 150px;
+    height: 150px;
+}
+.card{
+    border: none;
+    background: #f0f0f0;
+}
+.img-area{
+    width: 150px;
+    height: 150px;;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.team-single:hover .side-two{
+    transform: rotateY(0deg);
+    border-radius: 5px;
+}
+.team-single:hover .side-one{
+    transform: rotateY(180deg);
+}
+.content-area{
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.side-one{
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+.side-two{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f0f0f0;
+    transform: rotateY(-180deg);
+}
+.side-one,.side-two{
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.side-one .card,.side-two .card{
+    min-height: 312px;
+}
+.side-two .card a{
+    font-size: 18px;
+    color: #19b6cf;
+}
+.team-area h4{
+    color: #19b6cf;
+    font-family: bignoodletitling;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.team-area p{
+    font-family: merienda;
+}
+.team-area .side-two .card a  .fa-facebook-f:hover{
+    color: #3b5998;
+}
+.team-area .side-two .card a  .fa-instagram:hover{
+    color: #ac2bac;
+}
+.team-area .side-two .card a  .fa-linkedin:hover{
+    color: #0082ca;
+}
+.team-area .side-two .card a  .fa-github:hover{
+    color: #333333;
+}
+
+
+
+
+/* Styling for footer*/
+footer a:hover{
+    width: 45px;
+    transition: 3s;
+}
